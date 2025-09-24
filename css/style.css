@@ -7,35 +7,35 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0d0b1a, #1a132b); /* темний фіолетовий градієнт */
+  background: linear-gradient(135deg, #0d0f0d, #1a2b1a); /* темний зелений градієнт */
   color: #e0e0e0;
   line-height: 1.6;
 }
 
 a {
-  color: #bb86fc; /* світло-фіолетовий */
+  color: #28a428; /* смарагдовий */
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  color: #d8b4fe; /* ніжний лавандовий */
-  text-shadow: 0 0 6px #bb86fc;
+  color: #4ade80; /* неоново-зелений */
+  text-shadow: 0 0 6px #28a428;
 }
 
 /* ========== Header / Hero ========== */
 header.hero {
-  background: linear-gradient(135deg, #1a132b, #241b3a);
+  background: linear-gradient(135deg, #0d0f0d, #1a2b1a);
   padding: 80px 20px;
   text-align: center;
-  border-bottom: 2px solid #6a0dad;
+  border-bottom: 2px solid #28a428;
 }
 
 header.hero h1 {
   font-size: 3rem;
-  color: #bb86fc; /* головний акцент */
+  color: #4ade80;
   margin-bottom: 20px;
-  text-shadow: 0 0 10px #6a0dad;
+  text-shadow: 0 0 10px #28a428;
 }
 
 header.hero p {
@@ -49,8 +49,8 @@ header.hero p {
 nav.main-nav {
   display: flex;
   justify-content: center;
-  background-color: #1a132b;
-  border-bottom: 2px solid #6a0dad;
+  background-color: #0f1a0f;
+  border-bottom: 2px solid #28a428;
 }
 
 nav.main-nav a {
@@ -62,9 +62,9 @@ nav.main-nav a {
 }
 
 nav.main-nav a:hover {
-  background-color: #241b3a;
-  color: #bb86fc;
-  text-shadow: 0 0 6px #bb86fc;
+  background-color: #162616;
+  color: #4ade80;
+  text-shadow: 0 0 6px #28a428;
 }
 
 /* ========== Контейнер / Основний контент ========== */
@@ -81,11 +81,11 @@ section {
 
 section h2 {
   font-size: 2rem;
-  color: #bb86fc;
+  color: #4ade80;
   margin-bottom: 20px;
-  border-left: 4px solid #c0c0c0; /* срібний акцент */
+  border-left: 4px solid #c0c0c0;
   padding-left: 10px;
-  text-shadow: 0 0 8px #6a0dad;
+  text-shadow: 0 0 8px #28a428;
 }
 
 section p {
@@ -103,39 +103,39 @@ section p {
 }
 
 .skills-list li {
-  background-color: #1a132b;
+  background-color: #0f1a0f;
   padding: 15px 20px;
-  border-left: 4px solid #6a0dad;
+  border-left: 4px solid #28a428;
   border-radius: 6px;
   transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .skills-list li:hover {
   transform: translateY(-5px);
-  background-color: #241b3a;
-  border-left-color: #bb86fc;
-  box-shadow: 0 0 12px #6a0dad;
+  background-color: #162616;
+  border-left-color: #4ade80;
+  box-shadow: 0 0 12px #28a428;
 }
 
 /* ========== Проєкти ========== */
 .project {
-  background-color: #1a132b;
+  background-color: #0f1a0f;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 30px;
-  border-left: 4px solid #6a0dad;
+  border-left: 4px solid #28a428;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px #bb86fc;
+  box-shadow: 0 0 20px #4ade80;
 }
 
 .project h3 {
-  color: #bb86fc;
+  color: #4ade80;
   margin-bottom: 10px;
-  text-shadow: 0 0 6px #6a0dad;
+  text-shadow: 0 0 6px #28a428;
 }
 
 .project img {
@@ -143,7 +143,7 @@ section p {
   max-width: 600px;
   border-radius: 5px;
   margin: 10px 0;
-  border: 2px solid #6a0dad;
+  border: 2px solid #28a428;
 }
 
 /* ========== Галерея фото ========== */
@@ -156,20 +156,20 @@ section p {
 .gallery img {
   width: calc(50% - 10px);
   border-radius: 5px;
-  border: 2px solid #6a0dad;
+  border: 2px solid #28a428;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px #bb86fc;
+  box-shadow: 0 0 15px #4ade80;
 }
 
 /* ========== Додаткові навички ========== */
 #additional p {
-  background-color: #1a132b;
+  background-color: #0f1a0f;
   padding: 15px 20px;
-  border-left: 4px solid #6a0dad;
+  border-left: 4px solid #28a428;
   border-radius: 6px;
 }
 
@@ -181,15 +181,14 @@ section p {
 #contacts a {
   color: #c0c0c0;
   font-weight: bold;
-  text-shadow: 0 0 5px #bb86fc;
+  text-shadow: 0 0 5px #28a428;
 }
-
 /* ========== Footer ========== */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #1a132b;
-  border-top: 2px solid #6a0dad;
+  background-color: #0f1a0f;
+  border-top: 2px solid #28a428;
   font-size: 0.9rem;
   color: #aaa;
 }
@@ -201,5 +200,98 @@ footer {
   }
   .gallery img {
     width: 100%;
+  }
+}
+.hero-section {
+  background: linear-gradient(135deg, #121212, #1a1a1a);
+  padding: 60px 20px;
+  border-bottom: 2px solid #1a4d1a;
+}
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 500px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #1a4d1a;
+  margin-bottom: 15px;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  color: #d4af37; /* золотий акцент */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-text p, .about-text .intro, .about-text .about-extra {
+  font-size: 1.1rem;
+  color: #d0d0d0;
+  margin-bottom: 15px;
+}
+
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.skills-list li {
+  background-color: #1a1a1a;
+  padding: 15px 20px;
+  border-left: 4px solid #1a4d1a;
+  border-radius: 6px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: translateY(-5px);
+  background-color: #212121;
+  border-left-color: #d4af37;
+}
+
+.about-photo {
+  flex: 0 0 300px;
+}
+
+.about-photo img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #1a4d1a;
+}
+
+/* Контакти */
+.contact-info h3 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #1a4d1a;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #28a428;
+}
+
+/* Адаптивність */
+@media(max-width: 900px){
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-photo {
+    width: 70%;
   }
 }
