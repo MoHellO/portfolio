@@ -1,52 +1,70 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/style.css">
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Про мене – Легінович Денис</title>
-  <style> body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; } header { background: #222; color: #fff; padding: 20px; text-align: center; } header h1 { margin: 0; } nav { display: flex; justify-content: center; background: #444; } nav a { color: #fff; text-decoration: none; padding: 14px 20px; display: block; } nav a:hover { background: #333; } .container { width: 90%; max-width: 1000px; margin: 20px auto; } section { margin-bottom: 40px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); } section h2 { margin-top: 0; color: #222; } .project { margin-bottom: 20px; } .project h3 { margin-bottom: 5px; } .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 15px; } .gallery img { width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: transform 0.3s; } .gallery img:hover { transform: scale(1.05); } footer { text-align: center; padding: 20px; background: #222; color: #fff; } </style>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Легінович Денис</h1>
-    <p>Web Developer | Game Developer</p>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Привіт! Я Легінович Денис — Junior Developer</h1>
+      <p>Створюю 2D-ігри, вебсайти та інноваційні цифрові рішення. Завжди в пошуку нових технологічних викликів та цікавих проєктів.</p>
+    </div>
   </header>
 
-  <nav>
+  <!-- Navigation -->
+  <nav class="main-nav">
     <a href="index.html">Про мене</a>
     <a href="web.html">WebDev</a>
     <a href="game.html">GameDev</a>
   </nav>
 
-  <div class="container">
+  <main class="container">
+    <!-- About Me Section -->
     <section id="about">
       <h2>Про мене</h2>
-      <p>Привіт! Мене звати Денис Легінович. Я закінчив коледж за спеціальністю <strong>Інженерія програмного забезпечення</strong>. Маю досвід у розробці веб-сайтів та ігор. Моя мета — створювати сучасні, зручні та ефективні продукти для користувачів.</p>
-      <p>Мої сильні сторони:</p>
-      <ul>
-        <li>Розробка веб-сайтів на <strong>OpenCart</strong>, <strong>WordPress</strong></li>
-        <li>Front-end: HTML, CSS, JavaScript</li>
-        <li>Створення ігор на <strong>Unity</strong> з використанням C#</li>
-        <li>Базові навички роботи з базами даних (SQLite, MySQL)</li>
-        <li>Адаптивний дизайн та UI/UX</li>
-      </ul>
-      <p>Люблю експериментувати з новими технологіями та вивчати сучасні фреймворки.</p>
+      <p>Я — молодший фаховий бакалавр за спеціальністю <strong>Інженерія програмного забезпечення</strong>. Наприкінці навчання проходив стажування у міжнародній IT-компанії, де отримав практичний досвід роботи над реальними проєктами. Маю міцну базу знань у різних мовах програмування та технологіях, вмію поєднувати технічні навички з креативним підходом та завжди прагну розвиватися.</p>
+      <p>Люблю технологічні виклики та шукаю можливості працювати над сучасними, інноваційними проєктами.</p>
 
-      <h3>Фото</h3>
+      <!-- Skills -->
+      <h3>Мої ключові навички та технології</h3>
+      <ul>
+        <li><strong>C++:</strong> ООП, ефективний структурований код</li>
+        <li><strong>C#:</strong> Створення 2D-ігор, веб-додатків</li>
+        <li><strong>Python:</strong> базові скрипти, телеграм-боти</li>
+        <li><strong>Java:</strong> базова розробка веб-функціоналу</li>
+        <li><strong>SQL / бази даних:</strong> базові навички роботи з таблицями та запитами</li>
+        <li><strong>Unity 2D:</strong> створення ігор, анімацій, UI та механіки</li>
+        <li><strong>HTML / CSS / PHP:</strong> створення веб-сайтів з привабливим дизайном</li>
+        <li><strong>OpenCart / CMS:</strong> розробка та підтримка інтернет-магазинів</li>
+        <li><strong>Photoshop:</strong> базовий UI/UX та оформлення веб-дизайну</li>
+      </ul>
+
+      <!-- About / Unique -->
+      <h3>Про себе</h3>
+      <p>Люблю поєднувати креативність та технології, працювати над проєктами, де можна втілювати нестандартні рішення. Маю досвід створення власних 2D-ігор та веб-сайтів, а також виконання замовлень на фрілансі. Постійно розвиваюся, слідкую за новинками IT-індустрії та прагну працювати у команді, де можна реалізувати інноваційні ідеї.</p>
+
+      <!-- Gallery / Photos -->
+      <h3>Фото / Проєкти</h3>
       <div class="gallery">
         <img src="images/game1.jpg" alt="Заставка гри Twilight Enchantress">
         <img src="images/achievement1.jpg" alt="Досягнення 1">
+        <img src="images/portfolio.jpg" alt="Резюме та портфоліо сайт">
       </div>
 
-      <h2>Контакти</h2>
+      <!-- Contacts -->
+      <h3>Контакти</h3>
       <p>Email: <a href="mailto:dd805096@gmail.com">dd805096@gmail.com</a></p>
       <p>Телефон: +380 (95) 712-72-87</p>
       <p>GitHub: <a href="https://github.com/MoHellO" target="_blank">https://github.com/MoHellO</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">Посилання на профіль</a></p>
     </section>
-  </div>
+  </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Легінович Денис. Усі права захищено.</p>
   </footer>
