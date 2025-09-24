@@ -7,61 +7,64 @@
 }
 
 body {
-  background-color: #121212; /* темно-сірий чорний для менш агресивного фону */
-  color: #e0e0e0; /* білий текст для читабельності */
+  background: linear-gradient(135deg, #0d0b1a, #1a132b); /* темний фіолетовий градієнт */
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
 a {
-  color: #1a4d1a; /* темно-зелений */
+  color: #bb86fc; /* світло-фіолетовий */
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  color: #28a428; /* яскравіший зелений при наведенні */
+  color: #d8b4fe; /* ніжний лавандовий */
+  text-shadow: 0 0 6px #bb86fc;
 }
 
 /* ========== Header / Hero ========== */
 header.hero {
-  background: linear-gradient(135deg, #121212, #1a1a1a);
+  background: linear-gradient(135deg, #1a132b, #241b3a);
   padding: 80px 20px;
   text-align: center;
-  border-bottom: 2px solid #1a4d1a;
+  border-bottom: 2px solid #6a0dad;
 }
 
 header.hero h1 {
   font-size: 3rem;
-  color: #1a4d1a; /* темно-зелений */
+  color: #bb86fc; /* головний акцент */
   margin-bottom: 20px;
+  text-shadow: 0 0 10px #6a0dad;
 }
 
 header.hero p {
   font-size: 1.3rem;
   max-width: 700px;
   margin: 0 auto;
-  color: #cfcfcf; /* трохи менше яскравий білий */
+  color: #cfcfcf;
 }
 
 /* ========== Navigation ========== */
 nav.main-nav {
   display: flex;
   justify-content: center;
-  background-color: #1a1a1a;
-  border-bottom: 2px solid #1a4d1a;
+  background-color: #1a132b;
+  border-bottom: 2px solid #6a0dad;
 }
 
 nav.main-nav a {
   padding: 15px 25px;
-  color: #dcdcdc;
+  color: #e0e0e0;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 nav.main-nav a:hover {
-  background-color: #212121;
-  color: #28a428;
+  background-color: #241b3a;
+  color: #bb86fc;
+  text-shadow: 0 0 6px #bb86fc;
 }
 
 /* ========== Контейнер / Основний контент ========== */
@@ -78,10 +81,11 @@ section {
 
 section h2 {
   font-size: 2rem;
-  color: #1a4d1a; /* темно-зелений */
+  color: #bb86fc;
   margin-bottom: 20px;
-  border-left: 4px solid #d4af37; /* золотий акцент */
+  border-left: 4px solid #c0c0c0; /* срібний акцент */
   padding-left: 10px;
+  text-shadow: 0 0 8px #6a0dad;
 }
 
 section p {
@@ -99,46 +103,47 @@ section p {
 }
 
 .skills-list li {
-  background-color: #1a1a1a;
+  background-color: #1a132b;
   padding: 15px 20px;
-  border-left: 4px solid #1a4d1a; /* темно-зелений */
+  border-left: 4px solid #6a0dad;
   border-radius: 6px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .skills-list li:hover {
   transform: translateY(-5px);
-  background-color: #212121;
-  border-left-color: #d4af37; /* золотий при hover */
+  background-color: #241b3a;
+  border-left-color: #bb86fc;
+  box-shadow: 0 0 12px #6a0dad;
 }
 
 /* ========== Проєкти ========== */
 .project {
-  background-color: #1a1a1a;
+  background-color: #1a132b;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 30px;
-  border-left: 4px solid #1a4d1a;
+  border-left: 4px solid #6a0dad;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px #d4af37; /* золота підсвітка */
+  box-shadow: 0 0 20px #bb86fc;
 }
 
 .project h3 {
-  color: #28a428;
+  color: #bb86fc;
   margin-bottom: 10px;
+  text-shadow: 0 0 6px #6a0dad;
 }
 
 .project img {
   width: 100%;
   max-width: 600px;
   border-radius: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #1a4d1a;
+  margin: 10px 0;
+  border: 2px solid #6a0dad;
 }
 
 /* ========== Галерея фото ========== */
@@ -151,14 +156,20 @@ section p {
 .gallery img {
   width: calc(50% - 10px);
   border-radius: 5px;
-  border: 2px solid #1a4d1a;
+  border: 2px solid #6a0dad;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #bb86fc;
 }
 
 /* ========== Додаткові навички ========== */
 #additional p {
-  background-color: #1a1a1a;
+  background-color: #1a132b;
   padding: 15px 20px;
-  border-left: 4px solid #1a4d1a;
+  border-left: 4px solid #6a0dad;
   border-radius: 6px;
 }
 
@@ -168,18 +179,19 @@ section p {
 }
 
 #contacts a {
-  color: #d4af37; /* золоте виділення для контактів */
+  color: #c0c0c0;
   font-weight: bold;
+  text-shadow: 0 0 5px #bb86fc;
 }
 
 /* ========== Footer ========== */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #1a1a1a;
-  border-top: 2px solid #1a4d1a;
+  background-color: #1a132b;
+  border-top: 2px solid #6a0dad;
   font-size: 0.9rem;
-  color: #888;
+  color: #aaa;
 }
 
 /* ========== Адаптивність ========== */
