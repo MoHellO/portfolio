@@ -3,43 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GameDev – Легінович Денис</title>
- <link rel="stylesheet" href="css/style.css">
-
-
+  <title>GameDev</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Game Development</h1>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Game Developer</h1>
+      <p>Створюю 2D-ігри з продуманою механікою та привабливим дизайном. Використовую Unity та C# для реалізації ідей у готові продукти.</p>
+    </div>
   </header>
 
-  <nav>
+  <!-- Navigation -->
+  <nav class="main-nav">
     <a href="index.html">Про мене</a>
     <a href="web.html">WebDev</a>
     <a href="game.html">GameDev</a>
   </nav>
 
-  <div class="container">
-    <section>
-      <h2>Проєкти GameDev</h2>
+  <main class="container">
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Мої ігрові навички</h2>
+      <p>Маю досвід створення власних 2D-ігор на Unity з використанням C#. Вмію реалізовувати фізику об’єктів, анімації, UI/UX та ігрову логіку.</p>
+      <ul class="skills-list">
+        <li><strong>Unity 2D:</strong> створення сцен, інтеграція фізики, анімацій та UI</li>
+        <li><strong>C#:</strong> скрипти для ігрової логіки, обробка подій та взаємодій</li>
+        <li><strong>Photoshop:</strong> базовий графічний дизайн для ігор, створення спрайтів та UI-елементів</li>
+        <li><strong>Операційні системи та платформи:</strong> підготовка ігор для публікації на ПК та мобільні пристрої</li>
+        <li><strong>Бази даних:</strong> збереження результатів ігрового процесу</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Проєкти</h2>
       <div class="project">
-        <h3>Twilight Enchantress</h3>
-        <p>Unity + C#. 2D-платформер з AI-системою ворогів, NavMesh, VFX та збереженням прогресу. Реалізовано базу даних SQLite.</p>
-        <img src="images/game1.jpg" alt="Twilight Enchantress">
+        <h3>Дипломний проект: Twilight Enchantress</h3>
+        <p>Детально продумана 2D-гра з механікою бою, інвентарем, сундуками та системою переміщення предметів. Розроблена на Unity 2D з використанням C#.</p>
+        <img src="images/twilight_enchantress.jpg" alt="Сцена гри Twilight Enchantress">
+        <p>Презентація: <a href="https://drive.google.com/" target="_blank">Переглянути</a></p>
       </div>
+
       <div class="project">
-        <h3>Міні-демки</h3>
-        <ul>
-          <li>AI ворогів (FSM, поведінка різних типів)</li>
-          <li>Фізика та система лута</li>
-          <li>UI-система (меню, налаштування)</li>
-          <li>Простий 2D платформер</li>
-        </ul>
-        <img src="images/game2.jpg" alt="Демо проект">
+        <h3>Інші навчальні та пет-проєкти</h3>
+        <p>Невеликі 2D-ігри та технічні демки, які демонструють роботу з фізикою, анімацією та UI.</p>
+        <img src="images/game_demo1.jpg" alt="Демо проект">
+        <img src="images/game_demo2.jpg" alt="Демо проект 2">
       </div>
     </section>
-  </div>
 
+    <!-- Additional Skills Section -->
+    <section id="additional">
+      <h2>Додатково</h2>
+      <p>Люблю поєднувати креативність та технології, створювати проєкти з нестандартними рішеннями та вдосконалювати свої навички під час роботи над складними завданнями. Готовий працювати у команді та навчатися у менторів.</p>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts">
+      <h2>Контакти</h2>
+      <p>Email: <a href="mailto:dd805096@gmail.com">dd805096@gmail.com</a></p>
+      <p>Телефон: +380 (95) 712-72-87</p>
+      <p>GitHub: <a href="https://github.com/MoHellO" target="_blank">https://github.com/MoHellO</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">Посилання на профіль</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 Легінович Денис. Усі права захищено.</p>
   </footer>

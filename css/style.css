@@ -1,89 +1,193 @@
-/* 1. Загальні стилі */
-html, body {
-  height: 100%; /* Займають всю висоту вікна */
+/* ========== Загальні налаштування ========== */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  display: flex;
-  flex-direction: column; /* Контент і футер в колонку */
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
+  background-color: #121212; /* темно-сірий чорний для менш агресивного фону */
+  color: #e0e0e0; /* білий текст для читабельності */
+  line-height: 1.6;
 }
 
-/* 2. Header */
-header {
-  background: #222;
-  color: #fff;
-  padding: 20px;
+a {
+  color: #1a4d1a; /* темно-зелений */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #28a428; /* яскравіший зелений при наведенні */
+}
+
+/* ========== Header / Hero ========== */
+header.hero {
+  background: linear-gradient(135deg, #121212, #1a1a1a);
+  padding: 80px 20px;
   text-align: center;
+  border-bottom: 2px solid #1a4d1a;
 }
 
-/* 3. Навігація */
-nav {
+header.hero h1 {
+  font-size: 3rem;
+  color: #1a4d1a; /* темно-зелений */
+  margin-bottom: 20px;
+}
+
+header.hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #cfcfcf; /* трохи менше яскравий білий */
+}
+
+/* ========== Navigation ========== */
+nav.main-nav {
   display: flex;
   justify-content: center;
-  background: #444;
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #1a4d1a;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 14px 20px;
-  display: block;
+nav.main-nav a {
+  padding: 15px 25px;
+  color: #dcdcdc;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-nav a:hover {
-  background: #333;
+nav.main-nav a:hover {
+  background-color: #212121;
+  color: #28a428;
 }
 
-/* 4. Основний контейнер */
+/* ========== Контейнер / Основний контент ========== */
 .container {
-  flex: 1 0 auto; /* Контейнер розтягується на всю доступну висоту */
-  width: 1000px;  /* Фіксована ширина */
-  margin: 20px auto;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-/* 5. Секції */
+/* ========== Секції ========== */
 section {
-  margin-bottom: 40px;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  min-height: 400px; /* Фіксована мінімальна висота */
+  margin-bottom: 60px;
 }
 
-/* 6. Галерея і фото */
+section h2 {
+  font-size: 2rem;
+  color: #1a4d1a; /* темно-зелений */
+  margin-bottom: 20px;
+  border-left: 4px solid #d4af37; /* золотий акцент */
+  padding-left: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #d0d0d0;
+}
+
+/* ========== Списки навичок ========== */
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.skills-list li {
+  background-color: #1a1a1a;
+  padding: 15px 20px;
+  border-left: 4px solid #1a4d1a; /* темно-зелений */
+  border-radius: 6px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: translateY(-5px);
+  background-color: #212121;
+  border-left-color: #d4af37; /* золотий при hover */
+}
+
+/* ========== Проєкти ========== */
+.project {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 4px solid #1a4d1a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #d4af37; /* золота підсвітка */
+}
+
+.project h3 {
+  color: #28a428;
+  margin-bottom: 10px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #1a4d1a;
+}
+
+/* ========== Галерея фото ========== */
 .gallery {
   display: flex;
-  gap: 10px;
-  margin-top: 15px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.gallery img,
-.project img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover; /* Фото не спотворюються */
+.gallery img {
+  width: calc(50% - 10px);
+  border-radius: 5px;
+  border: 2px solid #1a4d1a;
+}
+
+/* ========== Додаткові навички ========== */
+#additional p {
+  background-color: #1a1a1a;
+  padding: 15px 20px;
+  border-left: 4px solid #1a4d1a;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  transition: transform 0.3s;
 }
 
-.gallery img:hover,
-.project img:hover {
-  transform: scale(1.05);
+/* ========== Контакти ========== */
+#contacts p {
+  margin-bottom: 10px;
 }
 
-/* 7. Footer завжди внизу */
+#contacts a {
+  color: #d4af37; /* золоте виділення для контактів */
+  font-weight: bold;
+}
+
+/* ========== Footer ========== */
 footer {
-  flex-shrink: 0;       /* Не дозволяємо футеру зменшуватися */
-  background: #222;
-  color: #fff;
   text-align: center;
   padding: 20px;
-  width: 100%;
+  background-color: #1a1a1a;
+  border-top: 2px solid #1a4d1a;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* ========== Адаптивність ========== */
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+  .gallery img {
+    width: 100%;
+  }
 }

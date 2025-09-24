@@ -3,40 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebDev – Легінович Денис</title>
+  <title>WebDev</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Web Development</h1>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Web Developer</h1>
+      <p>Створюю сучасні вебсайти та інтернет-магазини з привабливим дизайном та зручним функціоналом.</p>
+    </div>
   </header>
 
-  <nav>
+  <!-- Navigation -->
+  <nav class="main-nav">
     <a href="index.html">Про мене</a>
     <a href="web.html">WebDev</a>
     <a href="game.html">GameDev</a>
   </nav>
 
-  <div class="container">
-    <section>
-      <h2>Web-проєкти</h2>
+  <main class="container">
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Мої веб-навички</h2>
+      <p>Маю досвід у створенні та підтримці вебсайтів, інтернет-магазинів та веб-додатків. Використовую сучасні технології та підходи для створення зручного, адаптивного та привабливого інтерфейсу.</p>
+      <ul class="skills-list">
+        <li><strong>OpenCart / WordPress:</strong> створення інтернет-магазинів, налаштування шаблонів, інтеграція з 1С</li>
+        <li><strong>HTML / CSS / PHP:</strong> верстка та функціонал вебсайтів</li>
+        <li><strong>JavaScript:</strong> базова інтерактивність та анімації</li>
+        <li><strong>Photoshop:</strong> UI/UX дизайн та макети для сайтів</li>
+        <li><strong>SQL:</strong> робота з базами даних, підключення та оптимізація даних</li>
+        <li><strong>Git / GitHub:</strong> контроль версій, робота в команді</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Проєкти</h2>
       <div class="project">
-        <h3>Інтернет-магазин ptr.com.ua</h3>
-        <p>OpenCart + інтеграція 1С. Брав участь у створенні та підтримці сайту, займався технічною оптимізацією і SEO.</p>
-        <img src="images/web1.jpg" alt="Скріншот сайту 1">
+        <h3>Резюме та портфоліо сайт</h3>
+        <p>Сайт для демонстрації моїх навичок веб-розробки та портфоліо. Розроблений на GitHub Pages, адаптивний та сучасний.</p>
+        <img src="images/portfolio.jpg" alt="Резюме та портфоліо сайт">
       </div>
+
       <div class="project">
-        <h3>Міні-магазин на OpenCart</h3>
-        <p>Демонстраційний інтернет-магазин із товарами, корзиною та базовою оплатою.</p>
-        <img src="images/web2.jpg" alt="Скріншот сайту 2">
-      </div>
-      <div class="project">
-        <h3>Лендінг/сайт-візитка</h3>
-        <p>HTML + CSS + JS. Адаптивний дизайн, сучасний інтерфейс.</p>
+        <h3><a href="https://ptr.com.ua/ua" target="_blank">PTR.com.ua</a></h3>
+        <p>Розробка та підтримка сайту на OpenCart. Інтеграція з 1С, оптимізація функціоналу, технічна підтримка. Мої завдання: налаштування шаблонів, підключення модулів, робота з користувачами.</p>
+        <img src="images/ptr_site.jpg" alt="Сайт PTR">
       </div>
     </section>
-  </div>
 
+    <!-- Additional Skills Section -->
+    <section id="additional">
+      <h2>Додатково</h2>
+      <p>Маю досвід виконання невеликих фріланс-проєктів, створення простих веб-додатків та оптимізації сайтів для швидкодії та зручності користувачів. Постійно вивчаю нові технології та підходи для розвитку веб-напрямку.</p>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts">
+      <h2>Контакти</h2>
+      <p>Email: <a href="mailto:dd805096@gmail.com">dd805096@gmail.com</a></p>
+      <p>Телефон: +380 (95) 712-72-87</p>
+      <p>GitHub: <a href="https://github.com/MoHellO" target="_blank">https://github.com/MoHellO</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">Посилання на профіль</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 Легінович Денис. Усі права захищено.</p>
   </footer>
