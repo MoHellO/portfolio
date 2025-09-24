@@ -229,12 +229,6 @@ h2 {
   padding-left: 10px;
 }
 
-h3 {
-  font-size: 1.8rem;
-  color: #cfcf9f; /* золотий відтінок для підзаголовків */
-  text-shadow: 0 0 8px #9e9e5f;
-}
-
 p, li {
   font-family: 'Roboto', sans-serif;
   font-size: 1.1rem;
@@ -254,10 +248,6 @@ a:hover {
   text-shadow: 0 0 6px #28a428, 0 0 12px #4ade80;
 }
 
-.gold {
-  color: #d4af37; /* золотий для акцентів */
-  text-shadow: 0 0 6px #d4af37;
-}
 
 .skills-list li, .project p {
   font-family: 'Roboto Mono', monospace;
