@@ -1,19 +1,19 @@
-/* Загальні стилі */
+/* 1. Загальні стилі */
 html, body {
-  height: 100%;       /* Займають весь екран */
+  height: 100%; /* Займають всю висоту вікна */
   margin: 0;
+  padding: 0;
 }
 
 body {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Контент і футер в колонку */
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   background: #f4f4f4;
   color: #333;
 }
 
-/* Header */
+/* 2. Header */
 header {
   background: #222;
   color: #fff;
@@ -21,7 +21,7 @@ header {
   text-align: center;
 }
 
-/* Навігація */
+/* 3. Навігація */
 nav {
   display: flex;
   justify-content: center;
@@ -39,24 +39,24 @@ nav a:hover {
   background: #333;
 }
 
-/* Контейнер контенту */
+/* 4. Основний контейнер */
 .container {
-  flex: 1 0 auto;   /* Займає весь доступний простір */
-  width: 1000px;    /* Фіксована ширина */
+  flex: 1 0 auto; /* Контейнер розтягується на всю доступну висоту */
+  width: 1000px;  /* Фіксована ширина */
   margin: 20px auto;
 }
 
-/* Секції */
+/* 5. Секції */
 section {
   margin-bottom: 40px;
   padding: 20px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  min-height: 400px; /* фіксована висота секцій */
+  min-height: 400px; /* Фіксована мінімальна висота */
 }
 
-/* Галерея і фото */
+/* 6. Галерея і фото */
 .gallery {
   display: flex;
   gap: 10px;
@@ -67,7 +67,7 @@ section {
 .project img {
   width: 300px;
   height: 200px;
-  object-fit: cover;
+  object-fit: cover; /* Фото не спотворюються */
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   transition: transform 0.3s;
@@ -78,11 +78,12 @@ section {
   transform: scale(1.05);
 }
 
-/* Footer завжди внизу */
+/* 7. Footer завжди внизу */
 footer {
-  flex-shrink: 0;   /* Не зменшуємо footer */
-  text-align: center;
-  padding: 20px;
+  flex-shrink: 0;       /* Не дозволяємо футеру зменшуватися */
   background: #222;
   color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
 }
